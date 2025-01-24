@@ -1,0 +1,104 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+  }
+  
+  .form-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .form-card h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-field {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #444;
+  }
+  
+  .form-field input,
+  .form-field select {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-field input:focus,
+  .form-field select:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .form-row .form-field {
+    flex: 1;
+  }
+  
+  button {
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+  }
+  
+  .home-container, .jobForm {
+    text-align: left;
+  }
+  
+  .home-container h1, .jobForm h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .home-container p, .jobForm p {
+    font-size: 20px;
+    color: #ddd;
+  }
+     
