@@ -36,7 +36,7 @@ const JobFinder = () => {
   useEffect(() => {
     const fetchJobdata = async () => {
       try {
-        const response = await axios.get("http://localhost:8300/api/formdata");
+        const response = await axios.get("http://localhost:8181/api/formdata");
         if (response.data.length > 0) {
           const data = response.data[0];
           setFormData(data);
@@ -66,10 +66,10 @@ const JobFinder = () => {
     }
     try {
       if (formId) {
-        await axios.put(`http://localhost:8300/api/formdata/${formId}`, formData);
+        await axios.put(`http://localhost:8181/api/formdata/${formId}`, formData);
         console.log("Form Data Updated:", formData);
       } else {
-        const response = await axios.post("http://localhost:8300/api/formdata", formData);
+        const response = await axios.post("http://localhost:8181/api/formdata", formData);
         setFormId(response.data._id);
         console.log("Form Data Submitted:", formData);
       }
